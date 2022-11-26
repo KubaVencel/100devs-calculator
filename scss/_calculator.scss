@@ -1,0 +1,76 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;  
+}
+
+body {
+  color: #111;
+  background: #222;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font: {
+    size: 1.6rem;    
+    family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    weight: normal;
+  }
+}
+
+.calcBody {
+    border: #111 .25rem solid;
+    border-radius: 1rem;
+    background: #959292;
+    margin: 0 auto;
+    width: 25%;
+    height: 60%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+}
+
+.calcDisplay {
+    text-align: right;
+    word-break: break-all;
+    word-wrap: break-word;
+    background: #b4b2b2;
+    color: #555;
+    border: #555 .10rem solid;
+    border-radius: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 1rem;
+}
+
+button {
+    background: #525252;
+    color: #d4d2d2;
+    border-radius: 50%;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: scale-color($color: #525252, $lightness: -15%);
+}
+
+.currNum {
+    height: 60%;
+    color: #444;
+    padding: 1rem;
+}
+
+.prevNum {
+    height: 40%;
+    color: #555;
+    padding: 1rem;
+}
